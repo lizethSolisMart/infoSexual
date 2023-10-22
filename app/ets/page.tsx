@@ -4,13 +4,8 @@ import CustomCard from "@/components/CustomCard";
 
 export default function App() {
   return (
-    <div>
-      <CustomCard
-      imageUrl="/images/manos.jpg"
-      title="Esto es un título"/>
-            <CustomCard
-      imageUrl="/images/manos.jpg"
-      title="Esto es otro título"/>
+    <div className="flex space-x-4 p-6"> {/* Aquí usamos "flex" para colocar en fila y "space-x-4" para dar espacio entre las cards */}
+
     </div>
   );
 }

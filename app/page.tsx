@@ -3,14 +3,15 @@
 import React from 'react';
 import { Image } from '@nextui-org/react';
 import Head from 'next/head';
+import CustomCard from '@/components/CustomCard';
 
 const HomePage: React.FC = () => {
     return (
-        <div className="min-h-screen bg-gray-100 flex items-center justify-center">
+        <div>
             <Head>
                 <title>InfoSexual</title>
             </Head>
-            <div className="grid grid-cols-2 gap-4 p-6 shadow-lg bg-white rounded-lg">
+            <section className="grid grid-cols-2 gap-4 p-6 shadow-lg bg-white rounded-lg">
                 {/* Columna de Imagen */}
                 <div className="flex justify-center items-center">
                     <Image
@@ -25,7 +26,30 @@ const HomePage: React.FC = () => {
                     <h1 className="text-2xl font-bold">¡Bienvenidos a InfoSexual!</h1>
                     <p className="text-gray-600">Un espacio para jóvenes donde abordamos temas sobre sexualidad con responsabilidad y transparencia.</p>
                 </div>
-            </div>
+            </section>
+            <section className="flex space-x-4 p-6">
+                <CustomCard
+                    imageUrl="/images/manos.jpg"
+                    title="Responsabilidad afectiva"
+                    description="Aprende a cuidar tus emociones"
+                    route='/responsabilidad-afectiva'
+                />
+                <CustomCard
+                    imageUrl="/images/manos.jpg"
+                    title="Límites"
+                    description="Establece tus fronteras"
+                />
+                <CustomCard
+                    imageUrl="/images/manos.jpg"
+                    title="Relaciones sanas"
+                    description="Construye relaciones saludables"
+                />
+                <CustomCard
+                    imageUrl="/images/condon.jpg"
+                    title="La primera vez"
+                    description="Hazlo seguro y a tu tiempo"
+                />
+            </section>
         </div>
     );
 }
