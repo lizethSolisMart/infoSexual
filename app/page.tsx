@@ -17,7 +17,7 @@ const HomePage: React.FC = () => {
                     <Image
                         width={400} // Puedes ajustar el tamaño según necesites
                         alt="Imagen representativa"
-                        src="/images/manos.jpg"
+                        src="/images/ifosexual.jpg"
                     />
                 </div>
                 
@@ -29,23 +29,23 @@ const HomePage: React.FC = () => {
             </section>
             <section className="flex space-x-4 p-6">
                 <CustomCard
-                    imageUrl="/images/manos.jpg"
+                    imageUrl="/images/abrazo.jpg"
                     title="Responsabilidad afectiva"
                     description="Aprende a cuidar tus emociones"
                     route='/responsabilidad-afectiva'
                 />
                 <CustomCard
-                    imageUrl="/images/manos.jpg"
+                    imageUrl="/images/pareja-morada.jpg"
                     title="Límites"
                     description="Establece tus fronteras"
                 />
                 <CustomCard
-                    imageUrl="/images/manos.jpg"
+                    imageUrl="/images/esposa-esposo-peleando.jpg"
                     title="Relaciones sanas"
                     description="Construye relaciones saludables"
                 />
                 <CustomCard
-                    imageUrl="/images/condon.jpg"
+                    imageUrl="/images/primera-vez.jpg"
                     title="La primera vez"
                     description="Hazlo seguro y a tu tiempo"
                 />
