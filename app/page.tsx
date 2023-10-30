@@ -50,11 +50,14 @@ const HomePage: React.FC = () => {
                     imageUrl="/images/esposa-esposo-peleando.jpg"
                     title="Relaciones sanas"
                     description="Construye relaciones saludables"
+                    route='/relaciones-sanas'
+
                 />
                 <CustomCard
                     imageUrl="/images/primera-vez.jpg"
                     title="La primera vez"
                     description="Hazlo seguro y a tu tiempo"
+                    route='/la-primera-vez'
                 />
             </section>
         </div>
