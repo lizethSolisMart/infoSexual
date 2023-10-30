@@ -4,6 +4,7 @@ import React from 'react';
 import { Image } from '@nextui-org/react';
 import Head from 'next/head';
 import CustomCard from '@/components/CustomCard';
+import ChatComponent from '@/components/Chat';
 
 const HomePage: React.FC = () => {
     return (
@@ -27,6 +28,10 @@ const HomePage: React.FC = () => {
                     <p className="text-gray-600">Un espacio para jóvenes donde abordamos temas sobre sexualidad con responsabilidad y transparencia.</p>
                 </div>
             </section>
+            <div>
+      <h1>Chat de Preguntas y Respuestas</h1>
+      <ChatComponent />
+    </div>
             <section className="flex space-x-4 p-6">
                 <CustomCard
                     imageUrl="/images/abrazo.jpg"
@@ -38,6 +43,8 @@ const HomePage: React.FC = () => {
                     imageUrl="/images/pareja-morada.jpg"
                     title="Límites"
                     description="Establece tus fronteras"
+                    route='/limites'
+
                 />
                 <CustomCard
                     imageUrl="/images/esposa-esposo-peleando.jpg"

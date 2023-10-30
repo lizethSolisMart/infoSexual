@@ -4,7 +4,7 @@ import { Image } from "@nextui-org/react";
 
 const ResponsabilidadAfectiva: React.FC = () => {
     return (
-        <div className="p-6 space-y-6">
+        <div className="p-6 space-y-6 max-w-screen-sm mx-auto"> {/* Añadido max-w-screen-sm y mx-auto */}
             <Image 
                 alt="Imagen sugestiva"
                 src="/images/marioneta.png" // Poner la ruta de tu imagen aquí
@@ -20,8 +20,10 @@ const ResponsabilidadAfectiva: React.FC = () => {
             <section>
                 <h2 className="text-2xl font-semibold">Mitos vs. Realidades</h2>
                 <div className="grid grid-cols-2 gap-4 mt-4">
-                    <div className="bg-red-200 p-4 rounded">Mito: Si te celan, es porque te aman.</div>
+                <div className="bg-red-200 p-4 rounded">Mito: Si te celan, es porque te aman.</div>
                     <div className="bg-green-200 p-4 rounded">Realidad: Los celos no son una medida de amor, sino de inseguridad.</div>
+                    <div className="bg-red-200 p-4 rounded">Mito: El amor lo puede todo.</div>
+                    <div className="bg-green-200 p-4 rounded">Realidad: El amor es importante, pero una relación también requiere trabajo, respeto y comunicación.</div>
                     {/* Puedes continuar agregando más mitos y realidades */}
                 </div>
             </section>
@@ -30,7 +32,7 @@ const ResponsabilidadAfectiva: React.FC = () => {
                 <h2 className="text-2xl font-semibold">Voces Reales</h2>
                 <blockquote className="border-l-4 border-blue-500 pl-4 italic mt-4">
                     "Al principio pensé que era dulce que quisiera saber dónde estaba todo el tiempo. Pero luego me di cuenta de que no confiaba en mí."
-                    <p className="text-right mt-2">- Nombre de la Persona</p>
+                    <p className="text-right mt-2">- Lizeth Solis</p>
                 </blockquote>
                 {/* Puedes agregar más testimonios */}
             </section>
