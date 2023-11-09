@@ -28,10 +28,6 @@ const HomePage: React.FC = () => {
                     <p className="text-gray-600">Un espacio para jóvenes donde abordamos temas sobre sexualidad con responsabilidad y transparencia.</p>
                 </div>
             </section>
-            <div>
-      <h1>Chat de Preguntas y Respuestas</h1>
-      <ChatComponent />
-    </div>
             <section className="flex space-x-4 p-6">
                 <CustomCard
                     imageUrl="/images/abrazo.jpg"

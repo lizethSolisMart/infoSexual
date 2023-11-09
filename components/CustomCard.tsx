@@ -13,16 +13,14 @@ interface CustomCardProps {
 const CustomCard: React.FC<CustomCardProps> = ({ imageUrl, title, route, subtitle, description }) => {
     return (
         <Link href={route || "#"} passHref> {/* Envuelve tu Card con Link */}
-            <a> {/* Utiliza el componente a para que funcione el Link */}
-                <Card className="py-4 max-w-xs cursor-pointer" style={{ maxWidth: '270px' }}> {/* Añade cursor-pointer para que parezca clickable */}
-                    {/* Parte Superior: Imagen */}
+                <Card className="py-4 max-w-xs cursor-pointer" style={{ maxWidth: '270px' }}>
                     <CardHeader className="pb-0 pt-2 px-4 flex-col items-start">
                         <Image
-                            alt="Card background"
-                            className="w-full object-cover h-[140px]"
-                            src={imageUrl}
-                            width={250} 
-                            height={200} // Establecer la altura fija
+                        alt="Card background"
+                        className="object-cover h-36 w-60" // aquí ajustas el alto y el ancho usando Tailwind
+                        src={imageUrl}
+                        width={250} // Estos props de width y height podrían no ser necesarios
+                        height={200} // si Tailwind está estableciendo el tamaño adecuadamente
                         />
                     </CardHeader>
                     <Spacer y={3}/>
@@ -35,7 +33,6 @@ const CustomCard: React.FC<CustomCardProps> = ({ imageUrl, title, route, subtitl
                         {description && <small className="text-default-500 mx-2">{description}</small>}
                     </CardBody>
                 </Card>
-            </a>
         </Link>
     );
 }

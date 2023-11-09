@@ -29,17 +29,16 @@ const Footer: React.FC = () => {
   ];
 
   return (
-    <footer className="flex justify-between p-4 ">
-        {/* Logo UNAM y texto */}
-        <div className="flex items-center">
+    <footer className="flex justify-between p-4 bg-black/60 backdrop-blur">
+      {/* Logo UNAM y texto */}
+      <div className="flex items-center">
         <img src="/images/unam-logo.png" alt="UNAM Logo" className="max-w-[60px] h-auto mr-2" />
         <div>
-            <p className="text-black font-bold">FES Aragón</p>
-            <p className="text-gray-600">Pedagogía</p>
+            <p className="text-white font-bold">FES Aragón</p>
+            <p className="text-gray-300">Pedagogía</p>
         </div>
-        </div>
-
-
+      </div>
+  
       {/* Integrantes del equipo */}
       <div className="flex space-x-4">
         {teamMembers.map((member, index) => (
@@ -62,6 +61,7 @@ const Footer: React.FC = () => {
       </div>
     </footer>
   );
+  
 };
 
 export default Footer;

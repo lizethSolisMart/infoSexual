@@ -1,19 +1,25 @@
+import Link from "next/link";
+
 export default function NavBar() {
+    // Define tus colores personalizados
+    const textColor = "462559";
+    const hoverColor = "C78DF8";  // Este es un color supuesto para el hover, ajustalo a tus necesidades
+
     return (
-        <div className="bg-ffc0cb p-4 shadow-md">
+        <div style={{ backgroundColor: '#FFFFFF60' }} className="p-4 shadow-md ">
             <div className="container mx-auto flex justify-between items-center">
                 {/* Logo */}
-                <div className="text-2xl font-bold">
-                    InfoSexual
-                </div>
+                <Link href={"/"}>
+                    <h2 style={{ color: `#${textColor}` }} className="text-2xl font-bold hover:text-[#${hoverColor}]">
+                        InfoSexual
+                    </h2>
+                </Link>
 
                 {/* Enlace "Acerca de" */}
-                <div>
-                    <a href="#" className="text-gray-700 hover:text-gray-900">
-                        Acerca de
-                    </a>
-                </div>
+                <h2 style={{ color: `#${textColor}` }} className="text-white hover:text-[#${hoverColor}]">
+                    Acerca de
+                </h2>
             </div>
         </div>
-    )
+    );
 }
