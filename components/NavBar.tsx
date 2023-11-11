@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export default function NavBar() {
     // Define tus colores personalizados
-    const textColor = "462559";
+    const textColor = "FFFFFF";
     const hoverColor = "C78DF8";  // Este es un color supuesto para el hover, ajustalo a tus necesidades
 
     return (

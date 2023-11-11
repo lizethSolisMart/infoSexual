@@ -1,10 +1,9 @@
 // pages/HomePage.tsx
 
 import React from 'react';
-import { Image } from '@nextui-org/react';
+import { Image, ScrollShadow, Spacer } from '@nextui-org/react';
 import Head from 'next/head';
 import CustomCard from '@/components/CustomCard';
-import ChatComponent from '@/components/Chat';
 
 const HomePage: React.FC = () => {
     return (
@@ -12,23 +11,31 @@ const HomePage: React.FC = () => {
             <Head>
                 <title>InfoSexual</title>
             </Head>
-            <section className="grid grid-cols-2 gap-4 p-6 shadow-lg bg-white rounded-lg">
+            <section className="max-w-[1000px] mx-auto flex flex-col md:flex-row items-center p-6">
                 {/* Columna de Imagen */}
                 <div className="flex justify-center items-center">
                     <Image
-                        width={400} // Puedes ajustar el tamaño según necesites
+                        width={600} // Puedes ajustar el tamaño según necesites
                         alt="Imagen representativa"
                         src="/images/ifosexual.jpg"
                     />
                 </div>
+
+                <Spacer x={10}/>
                 
                 {/* Columna de Título y Descripción */}
                 <div className="flex flex-col justify-center items-start space-y-4 p-4">
-                    <h1 className="text-2xl font-bold">¡Bienvenidos a InfoSexual!</h1>
-                    <p className="text-gray-600">Un espacio para jóvenes donde abordamos temas sobre sexualidad con responsabilidad y transparencia.</p>
+                    <h1 className="text-2xl font-bold text-white">¡Bienvenidos a InfoSexual!</h1>
+                    <p className="text-white">Un espacio para jóvenes donde abordamos temas sobre sexualidad con responsabilidad y transparencia.</p>
                 </div>
             </section>
-            <section className="flex space-x-4 p-6">
+
+            <div className="bg-[#47176360]">
+   
+      {/* ScrollShadow envuelve el contenedor de las tarjetas */}
+      <ScrollShadow orientation="horizontal" className="max-w-[1000px] mx-auto p-6 overflow-x-auto">
+        {/* Esta sección debe tener un ancho definido que sea mayor que el del contenedor ScrollShadow para que se active el desplazamiento horizontal */}
+        <section className="flex space-x-4 min-w-max">
                 <CustomCard
                     imageUrl="/images/abrazo.jpg"
                     title="Responsabilidad afectiva"
@@ -56,6 +63,8 @@ const HomePage: React.FC = () => {
                     route='/la-primera-vez'
                 />
             </section>
+            </ScrollShadow>
+            </div>
         </div>
     );
 }
