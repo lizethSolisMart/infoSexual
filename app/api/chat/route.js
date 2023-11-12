@@ -10,11 +10,15 @@ export async function POST(request) {
   try {
     const body = await request.json();
 
-    // Siempre crea un nuevo thread
-    const thread = await openai.beta.threads.create();
-    const threadId = thread.id;
+    let threadId = body.threadId;
 
-    // Agrega el mensaje del usuario al thread
+    // Si no se recibe un threadId, crea un nuevo thread
+    if (!threadId) {
+      const thread = await openai.beta.threads.create();
+      threadId = thread.id;
+    }
+
+    // Agrega el mensaje del usuario al thread (ya sea existente o nuevo)
     await openai.beta.threads.messages.create(threadId, {
       role: "user",
       content: body.message,
@@ -22,7 +26,7 @@ export async function POST(request) {
 
     // Inicia el asistente y espera la respuesta
     const run = await openai.beta.threads.runs.create(threadId, {
-      assistant_id: "asst_F2WtiwhHtzZIoENXIbPKsH4h", // Usa el ID de tu asistente
+      assistant_id: "asst_F2WtiwhHtzZIoENXIbPKsH4h",
     });
 
     let runStatus = await openai.beta.threads.runs.retrieve(threadId, run.id);

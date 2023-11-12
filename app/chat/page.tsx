@@ -6,6 +6,7 @@ function HomePage() {
   const [prompt, setPrompt] = useState("");
   const [result, setResult] = useState("");
   const [loading, setLoading] = useState(false);
+  const [threadId, setThreadId] = useState(null); // Nuevo estado para almacenar el threadId
 
   const generateJoke = async () => {
     setLoading(true);
@@ -16,11 +17,13 @@ function HomePage() {
           "Content-Type": "application/json",
         },
         body: JSON.stringify({
-          message: prompt
+          message: prompt,
+          threadId, // Envía el threadId existente
         }),
       });
       const data = await response.json();
       setResult(data.message);
+      setThreadId(data.threadId); // Almacena el threadId para la próxima solicitud
     } catch (error) {
       if (error instanceof Error) {
         alert(error.message);
