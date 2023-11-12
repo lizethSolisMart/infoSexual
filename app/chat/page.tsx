@@ -4,9 +4,8 @@ import { useState } from "react";
 
 function HomePage() {
   const [prompt, setPrompt] = useState("");
-  const [result, setResult] = useState();
+  const [result, setResult] = useState("");
   const [loading, setLoading] = useState(false);
-
 
   const generateJoke = async () => {
     setLoading(true);
@@ -17,19 +16,16 @@ function HomePage() {
           "Content-Type": "application/json",
         },
         body: JSON.stringify({
-          messages: [
-            { role: "user", content: prompt }
-          ]
+          message: prompt
         }),
       });
       const data = await response.json();
-      setResult(data);
+      setResult(data.message);
     } catch (error) {
       if (error instanceof Error) {
-          alert(error.message);
+        alert(error.message);
       }
     }
-  
     setLoading(false);
   };
 
@@ -39,17 +35,18 @@ function HomePage() {
   };
 
   return (
-    <div className="bg-zinc-950 h-screen flex justify-center items-center">
-      <form onSubmit={onSubmit} className="bg-zinc-900 p-10 w-3/12">
-        <h1 className="text-2xl font-bold text-slate-200 mb-5">
-          Programmer Jokes Generator
+    <div className="h-screen flex justify-center items-center">
+      <form onSubmit={onSubmit} className="bg-white rounded-xl bg-opacity-60 backdrop-blur p-10 w-full mx-6">
+        <h1 className="text-2xl font-bold mb-2">
+          Infosexual GPT
         </h1>
+        <p className="mb-6">Soy tu orientador sobre educación sexual, pregúntame alguna duda que tengas</p>
         <input
           type="text"
           name="name"
-          placeholder="Enter an programming language"
+          placeholder="Ingresa tu duda sobre la que quieras que te apoye"
           onChange={(e) => setPrompt(e.target.value)}
-          className="p-2 rounded-md block bg-neutral-700 text-white w-full"
+          className="p-2 rounded-md block bg-white text-black w-full"
           value={prompt}
           autoFocus
         />
@@ -58,13 +55,10 @@ function HomePage() {
           className="bg-green-500 p-2 rounded-md block mt-2 disabled:opacity-50 text-white"
           disabled={!prompt || loading}
         >
-          {loading
-            ? "Thinking..."
-            : "Generate"
-          }
+          {loading ? "Pensando..." : "Enviar"}
         </button>
         {result && (
-          <p className="text-xl font-bold text-white max-w-xs my-10">
+          <p className="font-bold my-10">
             {result}
           </p>
         )}

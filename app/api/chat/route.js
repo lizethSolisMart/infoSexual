@@ -1,5 +1,4 @@
 // pages/api/chat/route.js
-
 import { NextResponse } from "next/server";
 import OpenAI from "openai";
 
@@ -9,15 +8,42 @@ const openai = new OpenAI({
 
 export async function POST(request) {
   try {
-    // Aquí puedes agregar validaciones para la solicitud entrante
     const body = await request.json();
 
-    const chat = await openai.chat.completions.create({
-      model: "gpt-3.5-turbo",
-      messages: body.messages, // Asegúrate de que 'messages' es el formato correcto
+    // Siempre crea un nuevo thread
+    const thread = await openai.beta.threads.create();
+    const threadId = thread.id;
+
+    // Agrega el mensaje del usuario al thread
+    await openai.beta.threads.messages.create(threadId, {
+      role: "user",
+      content: body.message,
     });
 
-    return NextResponse.json(chat.choices[0].message.content);
+    // Inicia el asistente y espera la respuesta
+    const run = await openai.beta.threads.runs.create(threadId, {
+      assistant_id: "asst_F2WtiwhHtzZIoENXIbPKsH4h", // Usa el ID de tu asistente
+    });
+
+    let runStatus = await openai.beta.threads.runs.retrieve(threadId, run.id);
+    while (runStatus.status !== "completed") {
+      await new Promise((resolve) => setTimeout(resolve, 2000));
+      runStatus = await openai.beta.threads.runs.retrieve(threadId, run.id);
+    }
+
+    // Recupera los mensajes del thread, incluida la respuesta del asistente
+    const messages = await openai.beta.threads.messages.list(threadId);
+    const lastMessageForRun = messages.data
+      .filter(
+        (message) => message.run_id === run.id && message.role === "assistant"
+      )
+      .pop();
+
+    // Devuelve la respuesta del asistente y el ID del thread para futuras interacciones
+    return NextResponse.json({
+      message: lastMessageForRun ? lastMessageForRun.content[0].text.value : "",
+      threadId: threadId,
+    });
   } catch (error) {
     console.error("Error al llamar a la API:", error);
     return NextResponse.error(error, {
