@@ -32,17 +32,17 @@ const RelacionesSanas: React.FC = () => {
             <h2 className="text-2xl font-semibold text-white">Mitos vs. Realidades</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
             {/* Primera pareja */}
-            <div className="bg-red-200 p-4 rounded-lg">Mito: Si te celan, es porque te aman.</div>
-            <div className="bg-green-200 p-4 rounded-lg">Realidad: Los celos no son una medida de amor, sino de inseguridad.</div>
+            <div className="bg-[#FF4D89] p-4 rounded-lg text-white">Mito: Si te celan, es porque te aman.</div>
+            <div className="bg-[#23DA8B] p-4 rounded-lg">Realidad: Los celos no son una medida de amor, sino de inseguridad.</div>
             {/* Segunda pareja */}
-            <div className="bg-red-200 p-4 rounded-lg">Mito: El amor verdadero debe superar cualquier obstáculo.</div>
-            <div className="bg-green-200 p-4 rounded-lg">Realidad: Una relación sana requiere respeto mutuo y comprensión, no sacrificios constantes.</div>
+            <div className="bg-[#FF4D89] p-4 rounded-lg text-white">Mito: El amor verdadero debe superar cualquier obstáculo.</div>
+            <div className="bg-[#23DA8B] p-4 rounded-lg">Realidad: Una relación sana requiere respeto mutuo y comprensión, no sacrificios constantes.</div>
             {/* Tercera pareja */}
-            <div className="bg-red-200 p-4 rounded-lg">Mito: Los conflictos siempre son malos en una relación.</div>
-            <div className="bg-green-200 p-4 rounded-lg">Realidad: Los conflictos, si se manejan de manera saludable, pueden fortalecer una relación.</div>
+            <div className="bg-[#FF4D89] p-4 rounded-lg text-white">Mito: Los conflictos siempre son malos en una relación.</div>
+            <div className="bg-[#23DA8B] p-4 rounded-lg">Realidad: Los conflictos, si se manejan de manera saludable, pueden fortalecer una relación.</div>
             {/* Cuarta pareja */}
-            <div className="bg-red-200 p-4 rounded-lg">Mito: Si alguien te ama, siempre querrá estar contigo.</div>
-            <div className="bg-green-200 p-4 rounded-lg">Realidad: En una relación saludable, es importante mantener la individualidad y respetar el espacio personal.</div>
+            <div className="bg-[#FF4D89] p-4 rounded-lg text-white">Mito: Si alguien te ama, siempre querrá estar contigo.</div>
+            <div className="bg-[#23DA8B] p-4 rounded-lg">Realidad: En una relación saludable, es importante mantener la individualidad y respetar el espacio personal.</div>
             </div>
         </div>
         </div>
@@ -52,55 +52,47 @@ const RelacionesSanas: React.FC = () => {
         {/* Sección de Voces Reales */}
         <div className="bg-[#colorFondo]"> {/* Reemplaza #colorFondo con el color deseado para el fondo */}
         <section className="max-w-[900px] mx-auto p-6">
-            <h2 className="text-2xl font-semibold text-white">Voces Reales</h2>
-            
-            {/* Primer testimonio */}
-            <blockquote className="border-l-4 border-blue-500 pl-4 italic mt-4 text-gray-200">
-            "Al principio pensé que era dulce que quisiera saber dónde estaba todo el tiempo. Pero luego me di cuenta de que no confiaba en mí."
-            <p className="text-right mt-2">- Nombre de la Persona</p>
-            </blockquote>
+          <h2 className="text-2xl font-semibold text-white">Voces Reales</h2>
 
-            <Spacer y={4}/>
-            <Divider/>
-            <Spacer y={3}/>
+          {/* Grid container */}
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
+
+            {/* Primer testimonio */}
+            <div className="bg-white p-4 rounded-lg shadow-md">
+              <blockquote className="border-l-4 pl-4 italic text-gray-800">
+                "Al principio pensé que era dulce que quisiera saber dónde estaba todo el tiempo. Pero luego me di cuenta de que no confiaba en mí."
+                <p className="text-right mt-2">- Lizeth</p>
+              </blockquote>
+            </div>
 
             {/* Segundo testimonio */}
-            <blockquote className="border-l-4 border-blue-500 pl-4 italic mt-4 text-gray-200">
-            "Me decían que sin él no era nada, al principio lo tomé como un gesto romántico. Con tiempo vi que era una forma de control."
-            <p className="text-right mt-2">- Nombre de la Persona</p>
-            </blockquote>
-
-            <Spacer y={4}/>
-            <Divider/>
-            <Spacer y={3}/>
+            <div className="bg-white p-4 rounded-lg shadow-md">
+              <blockquote className="border-l-4 pl-4 italic text-gray-800">
+                "Me decía que sin él no era nada, al principio lo tomé como un gesto romántico. Con tiempo vi que era una forma de control."
+                <p className="text-right mt-2">- Janeth</p>
+              </blockquote>
+            </div>
 
             {/* Tercer testimonio */}
-            <blockquote className="border-l-4 border-blue-500 pl-4 italic mt-4 text-gray-200">
-            "Siempre me comparaba con otras personas, haciéndome sentir que nunca estaba a la altura. Me tomó años entender que eso no era amor."
-            <p className="text-right mt-2">- Nombre de la Persona</p>
-            </blockquote>
-
-            <Spacer y={4}/>
-            <Divider/>
-            <Spacer y={3}/>
+            <div className="bg-white p-4 rounded-lg shadow-md">
+              <blockquote className="border-l-4  pl-4 italic text-gray-800">
+                "Siempre me comparaba con otras personas, haciéndome sentir que nunca estaba a la altura. Me tomó años entender que eso no era amor."
+                <p className="text-right mt-2">- Madai</p>
+              </blockquote>
+            </div>
 
             {/* Cuarto testimonio */}
-            <blockquote className="border-l-4 border-blue-500 pl-4 italic mt-4 text-gray-200">
-            "Cada vez que quería pasar tiempo con mis amigos, empezaba una discusión. No me di cuenta de lo aislado que estaba hasta que lo dejé."
-            <p className="text-right mt-2">- Nombre de la Persona</p>
-            </blockquote>
+            <div className="bg-white p-4 rounded-lg shadow-md">
+              <blockquote className="border-l-4  pl-4 italic text-gray-800">
+                "Cada vez que quería pasar tiempo con mis amigos, empezaba una discusión. No me di cuenta de lo aislado que estaba hasta que lo dejé."
+                <p className="text-right mt-2">- Antonio</p>
+              </blockquote>
+            </div>
 
-            <Spacer y={4}/>
-            <Divider/>
-            <Spacer y={3}/>
-
-            {/* Quinto testimonio */}
-            <blockquote className="border-l-4 border-blue-500 pl-4 italic mt-4 text-gray-200">
-            "Decía que nadie más podría quererme. Me costó mucho darme cuenta de que era una táctica para mantenerme bajo su control."
-            <p className="text-right mt-2">- Nombre de la Persona</p>
-            </blockquote>
-
+            {/* Se puede añadir más testimonios aquí con el mismo patrón */}
+          </div>
         </section>
+
         </div>
 
 
@@ -127,7 +119,7 @@ const RelacionesSanas: React.FC = () => {
 
 
       {/* Texto adicional */}
-      <div className="max-w-[900px] mx-auto p-6">
+      <div className="max-w-[900px] mx-auto p-6 mb-5">
         <p className="text-gray-200 text-lg">
           Entender la responsabilidad afectiva es fundamental para construir y mantener relaciones sanas. Reconoce tu valor y el de tu pareja como individuos únicos.
         </p>

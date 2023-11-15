@@ -1,9 +1,10 @@
 // pages/HomePage.tsx
 
 import React from 'react';
-import { Image, ScrollShadow, Spacer } from '@nextui-org/react';
+import { Button, Image, ScrollShadow, Spacer } from '@nextui-org/react';
 import Head from 'next/head';
 import CustomCard from '@/components/CustomCard';
+import Link from 'next/link';
 
 const HomePage: React.FC = () => {
     return (
@@ -25,12 +26,27 @@ const HomePage: React.FC = () => {
                 
                 {/* Columna de Título y Descripción */}
                 <div className="flex flex-col justify-center items-start space-y-4 p-4">
-                    <h1 className="text-2xl font-bold text-white">¡Bienvenidos a InfoSexual!</h1>
+                    <h1 className="text-2xl font-bold text-white">¡Bienvenid@s a InfoSexual!</h1>
                     <p className="text-white">Un espacio para jóvenes donde abordamos temas sobre sexualidad con responsabilidad y transparencia.</p>
+
+                    <Spacer y={2}/>
+                    <div className="flex flex-col justify-center items-start space-y-4 p-4 bg-white rounded-lg shadow-lg bg-opacity-90">
+
+                    <p className="text-black">¿Tienes preguntas sobre sexualidad? Nuestro chatbot educativo está aquí para ayudarte a encontrar respuestas.</p>
+
+                    <Link href="/chat">
+                    <Button className='color' style={{ backgroundColor: '#5A237D', color: 'white' }}>
+                        Iniciar chat
+                    </Button>
+                    </Link>
+                    </div>
                 </div>
             </section>
 
             <div className="bg-[#47176360]">
+            <div className="max-w-[1000px] mx-auto overflow-x-auto px-6">
+            <h2 className="text-2xl font-bold text-white py-4 text-left">Explora Nuestros Temas</h2>
+            </div>
    
       {/* ScrollShadow envuelve el contenedor de las tarjetas */}
       <ScrollShadow orientation="horizontal" className="max-w-[1000px] mx-auto p-6 overflow-x-auto">

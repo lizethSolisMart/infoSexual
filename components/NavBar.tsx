@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export default function NavBar() {
     // Define tus colores personalizados
-    const textColor = "FFFFFF";
+    const textColor = "481970";
     const hoverColor = "C78DF8";  // Este es un color supuesto para el hover, ajustalo a tus necesidades
 
     return (
@@ -16,9 +16,11 @@ export default function NavBar() {
                 </Link>
 
                 {/* Enlace "Acerca de" */}
+                <Link href={"/about"}>
                 <h2 style={{ color: `#${textColor}` }} className="text-white hover:text-[#${hoverColor}]">
                     Acerca de
                 </h2>
+                </Link>
             </div>
         </div>
     );

@@ -1,5 +1,5 @@
 import React from 'react';
-import { User, Card, CardBody } from '@nextui-org/react';
+import { User, Card, CardBody, Divider, Spacer } from '@nextui-org/react';
 import Link from 'next/link';
 
 const Footer: React.FC = () => {
@@ -8,20 +8,20 @@ const Footer: React.FC = () => {
     {
       name: 'Lizeth Solis',
       description: 'Product Designer',
-      avatar: 'https://i.pravatar.cc/150?u=a04258114e29026702d',
+      avatar: '/images/liz.JPG',
       instagram: 'https://instagram.com/lizsolism',
       user: '@lizsolism',
     },
     {
-        name: 'Madai hinojosa',
-        avatar: 'https://i.pravatar.cc/150?u=a04258114e29026702d',
+        name: 'Madai Hinojosa',
+        avatar: '/images/madai.png',
         instagram: 'https://instagram.com/lizsolism',
         user: '@madaHino',
       },
       {
-        name: 'Lizeth Solis',
+        name: 'Janeth Arias',
         description: 'Product Designer',
-        avatar: 'https://i.pravatar.cc/150?u=a04258114e29026702d',
+        avatar: '/images/janet.jpeg',
         instagram: 'https://instagram.com/lizsolism',
         user: '@lizsolism',
       },
@@ -29,22 +29,21 @@ const Footer: React.FC = () => {
   ];
 
   return (
-    <footer className="flex justify-between p-4 bg-black/60 backdrop-blur">
+    <footer className="flex justify-between p-4 bg-white backdrop-blur">
       {/* Logo UNAM y texto */}
       <div className="flex items-center">
         <img src="/images/unam-logo.png" alt="UNAM Logo" className="max-w-[60px] h-auto mr-2" />
         <div>
-            <p className="text-white font-bold">FES Aragón</p>
-            <p className="text-gray-300">Pedagogía</p>
+            <p className="text-black-50 font-bold">FES Aragón</p>
+            <p className="text-gray-700">Pedagogía</p>
         </div>
       </div>
   
       {/* Integrantes del equipo */}
       <div className="flex space-x-4">
         {teamMembers.map((member, index) => (
-          <Card key={index}>
-            <CardBody>
-              <User
+          <>
+              <User key={index}
                 name={member.name}
                 description={(
                     <Link href={member.instagram}>
@@ -55,8 +54,9 @@ const Footer: React.FC = () => {
                   src: member.avatar,
                 }}
               />
-            </CardBody>
-          </Card>
+              <Divider orientation="vertical"/>
+              <Spacer x={2}/>
+            </>
         ))}
       </div>
     </footer>
