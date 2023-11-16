@@ -6,11 +6,12 @@ import { Modal, ModalContent, ModalHeader, ModalBody, ModalFooter, Button, useDi
 import confetti from 'canvas-confetti';
 
 const pairs = [
-  { id: "1", text: "Concepto1", type: "concept" },
-  { id: "1", text: "Definición del Concepto1", type: "definition" },
-  { id: "2", text: "Concepto2", type: "concept" },
-  { id: "2", text: "Definición del Concepto2", type: "definition" },
-  // ... otros pares
+  { id: "1", text: "Responsabilidad afectiva", type: "concept" },
+  { id: "1", text: "Cuidar las emociones propias y las de los demás", type: "definition" },
+  { id: "2", text: "Consentimiento", type: "concept" },
+  { id: "2", text: "Es decir sí a algo de manera libre, consciente y voluntaria", type: "definition" },
+  { id: "3", text: "Sexualidad", type: "concept" },
+  { id: "3", text: "Experiencia humana que abarca el sexo, el género, el erotismo, la reproducción y la capacidad de sentir", type: "definition" },
 ];
 
 let shuffledPairs = [...pairs].sort(() => 0.5 - Math.random());
@@ -85,13 +86,15 @@ useEffect(() => {
 
   return (
     <div className="mx-auto p-10" style={{ maxWidth: '900px' }}>
-      <div >
+      <div className="grid grid-cols-3 md:grid-cols-4 gap-4">
         {shuffledPairs.map((card, index) => (
           <MemoryCard
             key={index}
             value={(flippedIndexes.includes(index) || matched.includes(card.id)) ? card.text : ""}
             isFlipped={flippedIndexes.includes(index) || matched.includes(card.id)}
             onClick={() => flipCard(index)}
+            type={card.type} // Añadir esta línea
+
           />
         ))}
 
