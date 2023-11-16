@@ -1,12 +1,21 @@
-// pages/HomePage.tsx
+"use client"
 
 import React from 'react';
-import { Button, Image, ScrollShadow, Spacer } from '@nextui-org/react';
+import { Button, Card, CardBody, Image, ScrollShadow, Spacer } from '@nextui-org/react';
 import Head from 'next/head';
 import CustomCard from '@/components/CustomCard';
 import Link from 'next/link';
+import MemoryCard from '@/components/MemoryCard';
+import { useRouter } from 'next/navigation';
 
 const HomePage: React.FC = () => {
+
+    const router = useRouter();
+
+    const handleClick = () => {
+      router.push('/memory');
+    };
+
     return (
         <div>
             <Head>
@@ -59,11 +68,41 @@ const HomePage: React.FC = () => {
                     route='/responsabilidad-afectiva'
                 />
                 <CustomCard
+                    imageUrl="/images/ets.jpg"
+                    title="ETS's"
+                    description="¡Protégete y cuida tu salud!"
+                    route='/ets'
+                />
+
+                 <CustomCard
+                    imageUrl="/images/abstinencia.jpg"
+                    title="Abstinencia"
+                    description="¡Tú decides cuándo y cómo!"
+                    route='/abstinencia'
+                />
+
+                <CustomCard
                     imageUrl="/images/pareja-morada.jpg"
                     title="Límites"
                     description="Establece tus fronteras"
                     route='/limites'
 
+                />
+
+                <CustomCard
+                    imageUrl="/images/edad-adecuada.jpg"
+                    title="La edad adecuada"
+                    description=" ¿Cuándo es el momento correcto?"
+                    route='/edad-adecuada'
+                />
+
+
+
+                                <CustomCard
+                    imageUrl="/images/expectativas.jpg"
+                    title="Expectativas del sexo"
+                    description="¿Cómo es el sexo en la vida real?"
+                    route='/expectativas'
                 />
                 <CustomCard
                     imageUrl="/images/esposa-esposo-peleando.jpg"
@@ -78,9 +117,37 @@ const HomePage: React.FC = () => {
                     description="Hazlo seguro y a tu tiempo"
                     route='/la-primera-vez'
                 />
+
+
             </section>
             </ScrollShadow>
             </div>
+
+            <div className="max-w-[1000px] mx-auto p-6 flex flex-col md:flex-row">
+                {/* Columna de Texto con mayor ancho */}
+                <div className="flex-1 md:flex-[2]">
+                    <h2 className="text-3xl font-bold text-white py-4">Juega y Aprende con nuestro Memorama Sexual</h2>
+                    <p className="text-lg text-white">
+    Descubre la educación sexual de forma divertida con nuestro memorama interactivo. Aprende sobre salud sexual y bienestar emocional mientras emparejas conceptos y definiciones.
+</p>
+                </div>
+
+                {/* Columna de la Card alineada a la derecha */}
+                <div className="flex-1 md:flex-[1] flex justify-center items-center">
+                <Card
+                    isPressable
+                    onPress={handleClick}
+                    className="m-2 transition-shadow duration-300 ease-in-out bg-white shadow-lg w-40 h-40"
+                    >
+                    <CardBody className="flex justify-center items-center text-3xl text-center text-[#5B237C] font-extrabold">
+                        <p>Jugar</p>
+                    </CardBody>
+                    </Card>
+                </div>
+                </div>
+
+
+
         </div>
     );
 }

@@ -15,15 +15,22 @@ const Footer: React.FC = () => {
     {
         name: 'Madai Hinojosa',
         avatar: '/images/madai.png',
-        instagram: 'https://instagram.com/lizsolism',
+        instagram: 'https://instagram.com/madaHino',
         user: '@madaHino',
       },
       {
         name: 'Janeth Arias',
         description: 'Product Designer',
         avatar: '/images/janet.jpeg',
-        instagram: 'https://instagram.com/lizsolism',
-        user: '@lizsolism',
+        instagram: 'https://instagram.com/arias_janeth03',
+        user: '@arias_janeth03',
+      },
+      {
+        name: 'Antonio Suarez',
+        description: 'Product Designer',
+        avatar: '/images/antonio.jpeg',
+        instagram: 'https://instagram.com/antonio_suarez26',
+        user: '@antonio_suarez26',
       },
     // ... otros 4 integrantes
   ];

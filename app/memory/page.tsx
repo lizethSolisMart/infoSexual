@@ -11,7 +11,13 @@ const pairs = [
   { id: "2", text: "Consentimiento", type: "concept" },
   { id: "2", text: "Es decir sí a algo de manera libre, consciente y voluntaria", type: "definition" },
   { id: "3", text: "Sexualidad", type: "concept" },
-  { id: "3", text: "Experiencia humana que abarca el sexo, el género, el erotismo, la reproducción y la capacidad de sentir", type: "definition" },
+  { id: "3", text: "Experiencia humana que abarca el sexo, el erotismo, la reproducción y la capacidad de sentir", type: "definition" },
+  { id: "4", text: "Sexo", type: "concept" },
+  { id: "4", text: "Características biológicas que nos hacen ser hombres, mujeres o intersexuales", type: "definition" },
+  { id: "5", text: "Género", type: "concept" },
+  { id: "5", text: "Construcción social que define lo que significa ser hombre o mujer", type: "definition" },
+  { id: "6", text: "Límites", type: "concept" },
+  { id: "6", text: "Líneas que no queremos que se crucen", type: "definition" },
 ];
 
 let shuffledPairs = [...pairs].sort(() => 0.5 - Math.random());
@@ -86,7 +92,13 @@ useEffect(() => {
 
   return (
     <div className="mx-auto p-10" style={{ maxWidth: '900px' }}>
-      <div className="grid grid-cols-3 md:grid-cols-4 gap-4">
+
+        <header className="text-left mb-5">
+          <h1 className="text-3xl font-bold text-white mb-2">Memorama InfoSexual</h1>
+          <p className="text-left text-white">Empareja los conceptos con su definición:</p>
+        </header>
+
+      <div className="grid grid-cols-3 md:grid-cols-4 gap-2">
         {shuffledPairs.map((card, index) => (
           <MemoryCard
             key={index}

@@ -9,20 +9,15 @@ interface MemoryCardProps {
 }
 
 const MemoryCard: React.FC<MemoryCardProps> = ({ value, isFlipped, onClick, type }) => {
-  const textSizeClass = isFlipped
-    ? type === "definition" 
-      ? "text-sm" 
-      : "text-md"
-    : "text-3xl";
+  const textSize = isFlipped ? (type === "definition" ? "text-sm" : "text-md") : "text-3xl";
 
   return (
     <Card
       isPressable
       onPress={onClick}
-      className={`m-2 ${isFlipped ? 'bg-white' : 'bg-[#5B237C]'}`}
-      shadow="lg"
+      className={`m-2 transition-shadow duration-300 ease-in-out ${isFlipped ? 'bg-white' : 'bg-[#5B237C]'} shadow-lg w-40 h-40`}
     >
-      <CardBody className={`flex justify-center items-center h-40 w-40 ${textSizeClass}`}>
+      <CardBody className={`flex justify-center items-center ${textSize} text-center font-bold`}>
         {isFlipped ? (
           <p className="text-center font-bold">{value}</p> // Añadir clase text-center aquí
         ) : (
@@ -32,7 +27,6 @@ const MemoryCard: React.FC<MemoryCardProps> = ({ value, isFlipped, onClick, type
     </Card>
   );
 };
-
 
 export default MemoryCard;
 
