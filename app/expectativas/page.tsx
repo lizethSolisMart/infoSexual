@@ -33,8 +33,8 @@ const ExpectativasDelSexo: React.FC = () => {
             <div className="bg-[#FF4D89] p-4 rounded-lg text-white">Mito: El sexo siempre es como en las películas.</div>
             <div className="bg-[#23DA8B] p-4 rounded-lg">Realidad: Las representaciones del sexo en los medios a menudo son exageradas y no reflejan la experiencia real de la mayoría de las personas.</div>
             {/* Segunda pareja */}
-            <div className="bg-[#FF4D89] p-4 rounded-lg text-white">Mito: Si no tienes sexo, no eres 'normal'.</div>
-            <div className="bg-[#23DA8B] p-4 rounded-lg">Realidad: La abstinencia y la frecuencia del sexo varían ampliamente entre las personas. No hay una 'normalidad' en cuanto a la actividad sexual.</div>
+            <div className="bg-[#FF4D89] p-4 rounded-lg text-white">Mito: Si no tienes sexo, no eres &apos;normal&apos;.</div>
+            <div className="bg-[#23DA8B] p-4 rounded-lg">Realidad: La abstinencia y la frecuencia del sexo varían ampliamente entre las personas. No hay una &apos;normalidad&apos; en cuanto a la actividad sexual.</div>
             {/* Tercera pareja */}
             <div className="bg-[#FF4D89] p-4 rounded-lg text-white">Mito: Si tu pareja quiere sexo, debes complacerla.</div>
             <div className="bg-[#23DA8B] p-4 rounded-lg">Realidad: El sexo debe ser siempre una decisión mutua y consensuada. No se debe sentir obligación de participar en la actividad sexual.</div>
