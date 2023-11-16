@@ -74,7 +74,7 @@ const Abstinencia: React.FC = () => {
                     {/* Segundo testimonio */}
                     <div className="bg-white p-4 rounded-lg shadow-md mt-4 md:mt-0">
                         <blockquote className="border-l-4 pl-4 italic text-gray-800">
-                        "La abstinencia fue una decisión que tomé por mi salud y bienestar emocional. Ha sido una experiencia enriquecedora y me ha permitido entender mejor mis límites y deseos."
+                        &quot;La abstinencia fue una decisión que tomé por mi salud y bienestar emocional. Ha sido una experiencia enriquecedora y me ha permitido entender mejor mis límites y deseos.&quot;
                         <p className="text-right mt-2">- Marco</p>
                         </blockquote>
                     </div>

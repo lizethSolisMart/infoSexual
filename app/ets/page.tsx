@@ -110,7 +110,7 @@ const ETS: React.FC = () => {
               {/* Primer testimonio */}
               <div className="bg-white p-4 rounded-lg shadow-md">
                 <blockquote className="border-l-4 pl-4 italic text-gray-800">
-                  "Descubrir que tenía una ETS fue un shock. Gracias a un buen tratamiento y apoyo, he aprendido a vivir con ella y a cuidar mejor de mi salud."
+                &quot;Descubrir que tenía una ETS fue un shock. Gracias a un buen tratamiento y apoyo, he aprendido a vivir con ella y a cuidar mejor de mi salud.&quot;
                   <p className="text-right mt-2">- Alex</p>
                 </blockquote>
               </div>
@@ -118,7 +118,7 @@ const ETS: React.FC = () => {
               {/* Segundo testimonio */}
               <div className="bg-white p-4 rounded-lg shadow-md mt-4 md:mt-0">
                 <blockquote className="border-l-4 pl-4 italic text-gray-800">
-                  "Al principio me sentí avergonzado y asustado, pero hablar abiertamente sobre mi ETS me ha ayudado a romper estigmas y a encontrar una comunidad de apoyo."
+                &quot;Al principio me sentí avergonzado y asustado, pero hablar abiertamente sobre mi ETS me ha ayudado a romper estigmas y a encontrar una comunidad de apoyo.&quot;
                   <p className="text-right mt-2">- Daniela</p>
                 </blockquote>
               </div>
@@ -126,7 +126,7 @@ const ETS: React.FC = () => {
               {/* Tercer testimonio */}
               <div className="bg-white p-4 rounded-lg shadow-md mt-4">
                 <blockquote className="border-l-4 pl-4 italic text-gray-800">
-                  "Ser diagnosticado con una ETS cambió mi forma de ver las relaciones y la importancia del cuidado de la salud sexual. Ahora me enfoco en la prevención y educación."
+                &quot;Ser diagnosticado con una ETS cambió mi forma de ver las relaciones y la importancia del cuidado de la salud sexual. Ahora me enfoco en la prevención y educación.&quot;
                   <p className="text-right mt-2">- Omar</p>
                 </blockquote>
               </div>
@@ -134,7 +134,7 @@ const ETS: React.FC = () => {
               {/* Cuarto testimonio */}
               <div className="bg-white p-4 rounded-lg shadow-md mt-4 md:mt-4">
                 <blockquote className="border-l-4 pl-4 italic text-gray-800">
-                  "Vivir con VIH ha sido un desafío, pero con el tratamiento adecuado y el apoyo de mis seres queridos, llevo una vida plena y saludable."
+                &quot;Vivir con VIH ha sido un desafío, pero con el tratamiento adecuado y el apoyo de mis seres queridos, llevo una vida plena y saludable.&quot;
                   <p className="text-right mt-2">- Laura</p>
                 </blockquote>
               </div>

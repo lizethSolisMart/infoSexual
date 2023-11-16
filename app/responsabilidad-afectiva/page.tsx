@@ -60,7 +60,7 @@ const RelacionesSanas: React.FC = () => {
             {/* Primer testimonio */}
             <div className="bg-white p-4 rounded-lg shadow-md">
               <blockquote className="border-l-4 pl-4 italic text-gray-800">
-                "Al principio pensé que era dulce que quisiera saber dónde estaba todo el tiempo. Pero luego me di cuenta de que no confiaba en mí."
+              &quot;Al principio pensé que era dulce que quisiera saber dónde estaba todo el tiempo. Pero luego me di cuenta de que no confiaba en mí.&quot;
                 <p className="text-right mt-2">- Lizeth</p>
               </blockquote>
             </div>
@@ -68,7 +68,7 @@ const RelacionesSanas: React.FC = () => {
             {/* Segundo testimonio */}
             <div className="bg-white p-4 rounded-lg shadow-md">
               <blockquote className="border-l-4 pl-4 italic text-gray-800">
-                "Me decía que sin él no era nada, al principio lo tomé como un gesto romántico. Con tiempo vi que era una forma de control."
+              &quot;Me decía que sin él no era nada, al principio lo tomé como un gesto romántico. Con tiempo vi que era una forma de control.&quot;
                 <p className="text-right mt-2">- Janeth</p>
               </blockquote>
             </div>
@@ -76,7 +76,7 @@ const RelacionesSanas: React.FC = () => {
             {/* Tercer testimonio */}
             <div className="bg-white p-4 rounded-lg shadow-md">
               <blockquote className="border-l-4  pl-4 italic text-gray-800">
-                "Siempre me comparaba con otras personas, haciéndome sentir que nunca estaba a la altura. Me tomó años entender que eso no era amor."
+              &quot;Siempre me comparaba con otras personas, haciéndome sentir que nunca estaba a la altura. Me tomó años entender que eso no era amor.&quot;
                 <p className="text-right mt-2">- Madai</p>
               </blockquote>
             </div>
@@ -84,7 +84,7 @@ const RelacionesSanas: React.FC = () => {
             {/* Cuarto testimonio */}
             <div className="bg-white p-4 rounded-lg shadow-md">
               <blockquote className="border-l-4  pl-4 italic text-gray-800">
-                "Cada vez que quería pasar tiempo con mis amigos, empezaba una discusión. No me di cuenta de lo aislado que estaba hasta que lo dejé."
+              &quot;Cada vez que quería pasar tiempo con mis amigos, empezaba una discusión. No me di cuenta de lo aislado que estaba hasta que lo dejé.&quot;
                 <p className="text-right mt-2">- Antonio</p>
               </blockquote>
             </div>

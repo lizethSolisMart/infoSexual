@@ -69,7 +69,7 @@ const LaEdadAdecuada: React.FC = () => {
             {/* Primer testimonio */}
             <div className="bg-white p-4 rounded-lg shadow-md">
                 <blockquote className="border-l-4 pl-4 italic text-gray-800">
-                "Decidí esperar hasta sentirme completamente listo, tanto emocional como físicamente. No me arrepiento de haber esperado; me dio tiempo para entenderme a mí mismo y a lo que realmente quería."
+                &quot;Decidí esperar hasta sentirme completamente listo, tanto emocional como físicamente. No me arrepiento de haber esperado; me dio tiempo para entenderme a mí mismo y a lo que realmente quería.&quot;
                 <p className="text-right mt-2">- Fernando</p>
                 </blockquote>
             </div>
@@ -77,7 +77,7 @@ const LaEdadAdecuada: React.FC = () => {
             {/* Segundo testimonio */}
             <div className="bg-white p-4 rounded-lg shadow-md mt-4 md:mt-0">
                 <blockquote className="border-l-4 pl-4 italic text-gray-800">
-                "Empecé mi vida sexual a una edad temprana, influenciado por mis amigos. Si pudiera volver atrás, esperaría hasta estar más informado y seguro de mí mismo."
+                &quot;Empecé mi vida sexual a una edad temprana, influenciado por mis amigos. Si pudiera volver atrás, esperaría hasta estar más informado y seguro de mí mismo.&quot;
                 <p className="text-right mt-2">- Sofia</p>
                 </blockquote>
             </div>
@@ -85,7 +85,7 @@ const LaEdadAdecuada: React.FC = () => {
             {/* Tercer testimonio */}
             <div className="bg-white p-4 rounded-lg shadow-md mt-0">
                 <blockquote className="border-l-4 pl-4 italic text-gray-800">
-                "Para mí, la conexión emocional era importante antes de empezar a tener relaciones sexuales. Quería que mi primera vez fuera con alguien que realmente me importara y en quien confiara."
+                &quot;Para mí, la conexión emocional era importante antes de empezar a tener relaciones sexuales. Quería que mi primera vez fuera con alguien que realmente me importara y en quien confiara.&quot;
                 <p className="text-right mt-2">- Lucia</p>
                 </blockquote>
             </div>
@@ -93,7 +93,7 @@ const LaEdadAdecuada: React.FC = () => {
             {/* Cuarto testimonio */}
             <div className="bg-white p-4 rounded-lg shadow-md mt-4 md:mt-0">
                 <blockquote className="border-l-4 pl-4 italic text-gray-800">
-                "Había mucha presión para empezar joven, pero decidí esperar hasta sentirme completamente cómodo y listo. Fue la mejor decisión para mí."
+                &quot;Había mucha presión para empezar joven, pero decidí esperar hasta sentirme completamente cómodo y listo. Fue la mejor decisión para mí.&quot;
                 <p className="text-right mt-2">- Miguel</p>
                 </blockquote>
             </div>

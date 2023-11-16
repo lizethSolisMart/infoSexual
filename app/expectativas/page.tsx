@@ -55,7 +55,7 @@ const ExpectativasDelSexo: React.FC = () => {
             {/* Primer testimonio */}
             <div className="bg-white p-4 rounded-lg shadow-md">
                 <blockquote className="border-l-4 pl-4 italic text-gray-800">
-                "Siempre creí que el sexo sería como lo veía en las películas, pero la realidad fue diferente y más compleja. Aprendí a ajustar mis expectativas y comunicarme mejor con mi pareja."
+                &quot;Siempre creí que el sexo sería como lo veía en las películas, pero la realidad fue diferente y más compleja. Aprendí a ajustar mis expectativas y comunicarme mejor con mi pareja.&quot;
                 <p className="text-right mt-2">- Roberto</p>
                 </blockquote>
             </div>
@@ -63,7 +63,7 @@ const ExpectativasDelSexo: React.FC = () => {
             {/* Segundo testimonio */}
             <div className="bg-white p-4 rounded-lg shadow-md mt-4 md:mt-0">
                 <blockquote className="border-l-4 pl-4 italic text-gray-800">
-                "Experimenté mucha presión para tener sexo debido a las expectativas sociales. Al final, descubrí que seguir mi propio ritmo era lo mejor para mí."
+                &quot;Experimenté mucha presión para tener sexo debido a las expectativas sociales. Al final, descubrí que seguir mi propio ritmo era lo mejor para mí.&quot;
                 <p className="text-right mt-2">- Alejandra</p>
                 </blockquote>
             </div>
@@ -71,7 +71,7 @@ const ExpectativasDelSexo: React.FC = () => {
             {/* Tercer testimonio */}
             <div className="bg-white p-4 rounded-lg shadow-md mt-0">
                 <blockquote className="border-l-4 pl-4 italic text-gray-800">
-                "La idea de que el sexo es siempre perfecto me creó mucha ansiedad. Con el tiempo, aprendí que la imperfección es parte de la experiencia humana y eso está bien."
+                &quot;La idea de que el sexo es siempre perfecto me creó mucha ansiedad. Con el tiempo, aprendí que la imperfección es parte de la experiencia humana y eso está bien.&quot;
                 <p className="text-right mt-2">- Carlos</p>
                 </blockquote>
             </div>
@@ -79,7 +79,7 @@ const ExpectativasDelSexo: React.FC = () => {
             {/* Cuarto testimonio */}
             <div className="bg-white p-4 rounded-lg shadow-md mt-4 md:mt-0">
                 <blockquote className="border-l-4 pl-4 italic text-gray-800">
-                "Antes pensaba que para ser sexualmente activo, tenía que actuar de cierta manera. Entendí que ser auténtico y honesto con mis deseos y límites es lo más importante."
+                &quot;Antes pensaba que para ser sexualmente activo, tenía que actuar de cierta manera. Entendí que ser auténtico y honesto con mis deseos y límites es lo más importante.&quot;
                 <p className="text-right mt-2">- Valeria</p>
                 </blockquote>
             </div>
