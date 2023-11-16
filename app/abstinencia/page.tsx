@@ -66,7 +66,7 @@ const Abstinencia: React.FC = () => {
                     {/* Primer testimonio */}
                     <div className="bg-white p-4 rounded-lg shadow-md">
                         <blockquote className="border-l-4 pl-4 italic text-gray-800">
-                        "Elegí la abstinencia como un acto de autodeterminación. Para mí, es una forma de enfocarme en mi desarrollo personal y en mis metas a largo plazo."
+                        &ldquo;Elegí la abstinencia como un acto de autodeterminación. Para mí, es una forma de enfocarme en mi desarrollo personal y en mis metas a largo plazo.&rdquo;
                         <p className="text-right mt-2">- Claudia</p>
                         </blockquote>
                     </div>
@@ -74,7 +74,7 @@ const Abstinencia: React.FC = () => {
                     {/* Segundo testimonio */}
                     <div className="bg-white p-4 rounded-lg shadow-md mt-4 md:mt-0">
                         <blockquote className="border-l-4 pl-4 italic text-gray-800">
-                        &quot;La abstinencia fue una decisión que tomé por mi salud y bienestar emocional. Ha sido una experiencia enriquecedora y me ha permitido entender mejor mis límites y deseos.&quot;
+                        &ldquo;La abstinencia fue una decisión que tomé por mi salud y bienestar emocional. Ha sido una experiencia enriquecedora y me ha permitido entender mejor mis límites y deseos.&rdquo;
                         <p className="text-right mt-2">- Marco</p>
                         </blockquote>
                     </div>
@@ -82,7 +82,7 @@ const Abstinencia: React.FC = () => {
                     {/* Tercer testimonio */}
                     <div className="bg-white p-4 rounded-lg shadow-md mt-0">
                         <blockquote className="border-l-4 pl-4 italic text-gray-800">
-                        "Decidí practicar la abstinencia tras varias experiencias que no se alineaban con mis valores. Ha sido un camino de autoconocimiento y crecimiento personal."
+                        &ldquo;Decidí practicar la abstinencia tras varias experiencias que no se alineaban con mis valores. Ha sido un camino de autoconocimiento y crecimiento personal.&rdquo;
                         <p className="text-right mt-2">- Sara</p>
                         </blockquote>
                     </div>
@@ -90,7 +90,7 @@ const Abstinencia: React.FC = () => {
                     {/* Cuarto testimonio */}
                     <div className="bg-white p-4 rounded-lg shadow-md mt-4 md:mt-0">
                         <blockquote className="border-l-4 pl-4 italic text-gray-800">
-                        "Para mí, la abstinencia no es solo sobre sexualidad, sino sobre tomar decisiones conscientes y vivir de acuerdo a mis propios términos. Me ha dado una nueva perspectiva de la vida."
+                        &ldquo;Para mí, la abstinencia no es solo sobre sexualidad, sino sobre tomar decisiones conscientes y vivir de acuerdo a mis propios términos. Me ha dado una nueva perspectiva de la vida.&rdquo;
                         <p className="text-right mt-2">- Andrés</p>
                         </blockquote>
                     </div>
