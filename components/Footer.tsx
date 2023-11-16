@@ -1,6 +1,7 @@
 import React from 'react';
 import { User, Card, CardBody, Divider, Spacer } from '@nextui-org/react';
 import Link from 'next/link';
+import Image from 'next/image';
 
 const Footer: React.FC = () => {
   // Datos de los integrantes del equipo
@@ -39,7 +40,7 @@ const Footer: React.FC = () => {
     <footer className="flex justify-between p-4 bg-white backdrop-blur">
       {/* Logo UNAM y texto */}
       <div className="flex items-center">
-        <img src="/images/unam-logo.png" alt="UNAM Logo" className="max-w-[60px] h-auto mr-2" />
+        <Image src="/images/unam-logo.png" alt="UNAM Logo" width={60} height={60} className='mr-2'/>
         <div>
             <p className="text-black-50 font-bold">FES Aragón</p>
             <p className="text-gray-700">Pedagogía</p>
