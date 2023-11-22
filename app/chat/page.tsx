@@ -84,7 +84,7 @@ const ChatBot: React.FC = () => {
 
   return (
     <div className="h-screen flex flex-col justify-center items-center p-6">
-      <h1 className="text-2xl font-bold mb-4 text-white">Prueba 9:28</h1>
+      <h1 className="text-2xl font-bold mb-4 text-white">Chat Infosexual</h1>
       <div className="bg-white rounded-xl p-10 w-full mx-6">
         <ScrollShadow size={100} className="w-full overflow-auto max-h-[32rem] mb-4">
           {messages.map((message, index) => (

@@ -26,7 +26,7 @@ export async function POST(request) {
 
     // Inicia el asistente y espera la respuesta
     const run = await openai.beta.threads.runs.create(threadId, {
-      assistant_id: "asst_zcHPRfnbBUEErGOKOyKyJgdt",
+      assistant_id: "asst_F2WtiwhHtzZIoENXIbPKsH4h",
     });
 
     let runStatus = await openai.beta.threads.runs.retrieve(threadId, run.id);
