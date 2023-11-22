@@ -1,0 +1,18 @@
+{
+    "version": 2,
+    "routes": [
+      {
+        "src": "/api/chat/route.js",
+        "methods": ["POST"],
+        "dest": "api/chat/route.js",
+        "headers": {
+          "x-vercel-deployment-url": "@"
+        },
+        "config": {
+          "api": {
+            "timeout": 30
+          }
+        }
+      }
+    ]
+  }
