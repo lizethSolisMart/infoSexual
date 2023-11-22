@@ -7,7 +7,7 @@
         "methods": ["GET", "POST", "PUT", "DELETE", "OPTIONS"]
       },
       {
-        "src": "/api/chat",
+        "src": "/api/.*",
         "methods": ["GET", "POST"],
         "timeout": 30000
       }
