@@ -4,7 +4,11 @@
         "src": ".*",
         "headers": { "Cache-Control": "max-age=0" },
         "continue": true,
-        "methods": ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
+        "methods": ["GET", "POST", "PUT", "DELETE", "OPTIONS"]
+      },
+      {
+        "src": "/api/chat",
+        "methods": ["GET", "POST"],
         "timeout": 30000
       }
     ]
